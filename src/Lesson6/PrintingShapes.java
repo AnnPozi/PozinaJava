@@ -14,12 +14,13 @@ public class PrintingShapes {
         int t = 0;
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                while (t == i) {
+                while (t > 5) {
                     System.out.print("*");
-                   t=t-i;
+                    int k = t;
+                    t++;
                    break;
                 }
-
+                System.out.println();
             }
            System.out.print("\n");
         }
